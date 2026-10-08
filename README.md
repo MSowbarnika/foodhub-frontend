@@ -1,16 +1,38 @@
-# React + Vite
+# 🍔 FoodHub - Food Ordering Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack food ordering application where users can browse food items, add them to a cart, apply a coupon, place orders and track the order status. Admins can manage foods and update order status.
 
-Currently, two official plugins are available:
+**Backend repo:** https://github.com/MSowbarnika/foodhub-backend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- User registration and login (token-based, passwords hashed with BCrypt)
+- Browse menu with search and category filter
+- Food details page
+- Cart with quantity update and coupon code (`FOOD30` gives 30% off)
+- Checkout with payment method selection (COD / UPI / Card - demo)
+- My Orders page with status tracker (Placed → Preparing → Delivered)
+- Admin panel (role-based access): add, edit, delete foods and update order status
+- Prices and discount are calculated on the server for security
 
-## React Compiler
+## Tech Stack
+| Layer | Technology |
+|-------|------------|
+| Frontend | React (Vite), React Router, Axios, Context API, CSS |
+| Backend | Java, Spring Boot, Spring Data JPA |
+| Database | MySQL |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+1. Start the backend from the backend repo (runs on `http://localhost:8080`).
+2. Then run the frontend:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
+3. Open `http://localhost:5173`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Admin Access
+The admin page is a hidden route at `/admin` and works only for users with the ADMIN role.
+
+## Author
+**Sowbarnika M** - Java Full Stack Developer (fresher)
