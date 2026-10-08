@@ -1,0 +1,8 @@
+.tabs { display: flex; gap: 10px; margin-bottom: 18px; }
+.msg { margin-bottom: 12px; color: #e8501a; font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+.admin-table { width: 100%; border-collapse: collapse; background: #fff; }
+.admin-table th, .admin-table td { padding: 10px; border-bottom: 1px solid #eee; text-align: left; font-size: 0.9rem; white-space: nowrap; }
+.admin-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 20px; background: #fff; padding: 16px; border-radius: 12px; }
+.admin-form input, .admin-form textarea, .status-select { padding: 9px 10px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; font-size: 0.95rem; }
+.admin-form .full { grid-column: 1 / -1; }

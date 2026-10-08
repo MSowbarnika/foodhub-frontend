@@ -1,0 +1,57 @@
+.hero-bg { background: linear-gradient(135deg, #fff1e6, #ffe3d0); }
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 30px; align-items: center; max-width: 1100px; margin: 0 auto; padding: 50px 20px; }
+.hero h1 { font-size: 2.8rem; line-height: 1.15; margin: 14px 0; }
+.hero p { color: #555; margin-bottom: 18px; }
+.hero-img { width: 100%; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+.pill { background: #fff; color: #e8501a; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; }
+.hero-search { display: flex; gap: 8px; margin-bottom: 14px; }
+.hero-search input { flex: 1; min-width: 0; padding: 12px 16px; border: 1px solid #ddd; border-radius: 10px; font-size: 1rem; }
+.popular { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 22px; font-size: 0.9rem; }
+.popular a { background: #fff; padding: 4px 12px; border-radius: 16px; color: #e8501a; font-weight: 600; }
+.stats { display: flex; gap: 28px; flex-wrap: wrap; }
+.stats div { display: flex; flex-direction: column; }
+.stats strong { font-size: 1.4rem; }
+.stats span { color: #777; font-size: 0.85rem; }
+
+.eyebrow { color: #e8501a; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+.eyebrow.light { color: #ffe3d0; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; }
+.tile { background: #fff; border-radius: 14px; padding: 20px; text-align: center; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s; }
+.tile:hover { transform: translateY(-4px); }
+.tile span { display: block; font-size: 2.6rem; margin-bottom: 6px; }
+
+.offer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; background: linear-gradient(135deg, #e8501a, #ff8a3d); color: #fff; padding: 34px; border-radius: 20px; }
+.offer h2 { font-size: 2.2rem; margin: 4px 0; }
+.btn.light { background: #fff; color: #e8501a; border-color: #fff; }
+
+.fc { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
+.fc-img { position: relative; height: 180px; background: #fff1e6; display: flex; align-items: center; justify-content: center; }
+.fc-img img { width: 100%; height: 100%; object-fit: cover; }
+.fc-emoji { font-size: 4rem; }
+.fc-badge { position: absolute; top: 10px; left: 10px; background: #e8501a; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; z-index: 1; }
+.fc-body { padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.fc-cat { color: #e8501a; font-size: 0.8rem; font-weight: 700; }
+.fc-desc { color: #777; font-size: 0.88rem; min-height: 38px; }
+.fc-row { display: flex; justify-content: space-between; align-items: center; }
+.fc-actions { display: flex; gap: 8px; margin-top: 6px; }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; }
+.features div { background: #fff; padding: 24px; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+.features span { font-size: 2.4rem; }
+
+.site-footer { background: #1f1f1f; color: #ddd; padding: 40px 30px 16px; margin-top: 30px; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+.site-footer h4 { color: #fff; margin-bottom: 10px; }
+.site-footer a { display: block; color: #bbb; margin-bottom: 6px; }
+.site-footer a:hover { color: #ff8a3d; }
+.subscribe { display: flex; gap: 6px; }
+.subscribe input { flex: 1; min-width: 0; padding: 8px 10px; border-radius: 8px; border: none; }
+.subscribe button { background: #e8501a; color: #fff; border: none; padding: 8px 12px; border-radius: 8px; font-weight: 600; }
+.subscribed { color: #7ddc8a; margin-top: 8px; font-size: 0.9rem; }
+.copyright { text-align: center; margin-top: 24px; color: #888; font-size: 0.85rem; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
+  .navbar { padding: 12px 16px; }
+}

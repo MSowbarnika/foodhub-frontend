@@ -1,0 +1,57 @@
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.main { flex: 1; }
+.section { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+.section h2 { margin-bottom: 16px; }
+.narrow { max-width: 460px; }
+.center { text-align: center; }
+.muted { color: #777; font-size: 0.92rem; margin: 4px 0; }
+.error { color: #c0392b; font-size: 0.9rem; }
+
+.btn { display: inline-block; background: #e8501a; color: #fff; border: 2px solid #e8501a; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
+.btn:hover { background: #c94312; }
+.btn.small { padding: 6px 12px; font-size: 0.85rem; }
+.btn.outline { background: transparent; color: #e8501a; }
+.btn.outline:hover { background: #fff1e6; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+
+.search { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; margin-bottom: 14px; }
+.categories { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.chip { border: 1px solid #e8501a; background: #fff; color: #e8501a; padding: 6px 14px; border-radius: 20px; }
+.chip.active { background: #e8501a; color: #fff; }
+
+.details { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
+.details-emoji { font-size: 8rem; background: #fff1e6; border-radius: 16px; padding: 20px 40px; }
+.desc { margin: 12px 0; max-width: 420px; }
+
+.cart-item { display: flex; align-items: center; gap: 16px; background: #fff; padding: 12px 16px; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 1px 5px rgba(0,0,0,0.07); flex-wrap: wrap; }
+.cart-emoji { font-size: 2.2rem; }
+.cart-info { flex: 1; min-width: 120px; }
+.qty { display: flex; align-items: center; gap: 10px; }
+.qty button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid #e8501a; background: #fff; color: #e8501a; font-size: 1rem; }
+
+.coupon-box { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; align-items: center; }
+.coupon-box input { flex: 1; min-width: 180px; padding: 9px 12px; border: 1px solid #ddd; border-radius: 8px; }
+.coupon-ok { color: #1e8e3e; font-weight: 600; margin-top: 6px; }
+.summary { margin: 16px 0; background: #fff; padding: 14px 18px; border-radius: 10px; box-shadow: 0 1px 5px rgba(0,0,0,0.07); }
+.summary p, .summary h3 { display: flex; justify-content: space-between; margin: 6px 0; }
+.summary .green { color: #1e8e3e; }
+.cart-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px; }
+
+.form { display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px; }
+.form input[type="text"], .form input[type="email"], .form input[type="password"], .form input:not([type]), .form textarea { padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; font-family: inherit; }
+
+.pay-options { display: flex; flex-direction: column; gap: 8px; }
+.pay-option { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #ddd; padding: 10px 14px; border-radius: 10px; cursor: pointer; }
+.pay-option.active { border-color: #e8501a; background: #fff1e6; }
+.pay-note { font-size: 0.85rem; color: #777; }
+
+.orders-top { display: flex; justify-content: space-between; align-items: center; }
+.order { background: #fff; padding: 14px 18px; border-radius: 10px; margin-bottom: 14px; box-shadow: 0 1px 5px rgba(0,0,0,0.07); }
+.order-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.badge { background: #e6f7ea; color: #1e8e3e; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+.tracker { display: flex; gap: 8px; margin: 12px 0; }
+.step { flex: 1; text-align: center; font-size: 0.8rem; color: #999; border-top: 4px solid #ddd; padding-top: 6px; }
+.step span { display: inline-block; width: 22px; height: 22px; line-height: 22px; border-radius: 50%; background: #ddd; color: #fff; font-weight: 700; margin-right: 4px; }
+.step.done { color: #1e8e3e; border-top-color: #1e8e3e; }
+.step.done span { background: #1e8e3e; }

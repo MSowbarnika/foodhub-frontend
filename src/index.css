@@ -1,0 +1,4 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; background: #fffaf5; color: #222; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: inherit; }
